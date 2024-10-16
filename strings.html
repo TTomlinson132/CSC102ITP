@@ -1,0 +1,76 @@
+<!--Tahkale Tomlinson-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Styles the body background blue-->
+<body style="background-color: blue;">
+    <!--Creates a form around the input boxes and the submit button returning the info to the validate form function-->
+    <form action="" method="past" onsubmit="return validateform();"  style="background-color:gray; padding: 15px;">
+    <!--Label and the input box for the first name-->
+    <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+    <!--Label and the input box for the last name-->
+    <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+    <!--Label and the input box for the zipcode-->
+    <label for="zipcode">Zip Code</label>
+        <input type="text" id="zipcode" name="zipcode"><br><br>
+    <!--The submit button sends the info to the validate function-->
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        //function that declares the data into variables and validates the information
+       function validateform(){
+        //first name input into a variable
+        var fname = document.getElementById('fname').value;
+        //last name input into a variable
+        var lname = document.getElementById("lname").value;
+        //Zipcode input into a variable
+        var zipcode = document.getElementById('zipcode').value;
+        //combining the first and last name variables
+        var name = fname + " " + lname;
+        //write the info into the console
+        console.log("name= " + name)
+        console.log("Zipcode= " + zipcode)
+
+        //checks to see if the text box is empty or just has spaces inside
+        if (fname.trim() == ""){
+            alert("Please enter a first name.")  
+            return
+        } 
+        //checks to see if the text box is empty or just has spaces inside
+        if (lname.trim() == ""){
+            alert("Please enter a last name.")
+            return  
+        }      
+        //checks to see if the text box is empty or just has spaces inside
+        if (zipcode.trim() == ""){
+            alert("Please enter a zipcode.")  
+            return
+        }    
+        //checks to see if the length of the string is less that 20 
+        if (name.length >= 20){
+            alert("Invalid Name")
+            namelen == true;
+            return
+        }
+        //checks to see if the length of the number is less the 5
+        if (zipcode.length < 5){
+            alert("Invalid Zipcode")
+            zipcodelen == true;
+        }
+        //If everything else is valid it displays the thank you message
+        else{
+            alert("Thank You for Joining our Service")
+        }
+        //does not return the data after
+        return false;
+       }
+    </script>
+</body>
+</html>
