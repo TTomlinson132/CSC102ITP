@@ -33,7 +33,7 @@ do{
     }
     //if not a palindrome 
     else{
-        alert(userInput + "is NOT a palindrome!")
+        alert(userInput + " is NOT a palindrome!")
     }
     //ask the user if they want to continue testing palindromes 
     var answer = prompt("Do you want to continue (y/n)");
