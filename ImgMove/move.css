@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(43, 135, 209);
+    color:white;
+   }
+   
+   nav{
+       height:600px;
+       width: 200px;
+       float: left;
+       padding: 5px;
+       line-height: 30px;
+   }
+   
+   footer{
+       text-align: center;
+       margin-right: 200px;
+   }
+   
+   #memeImage{
+       position: absolute;/* the will allow us to move the image*/
+       margin-right: 200px;
+       left: 100px; /*optional*/
+       top: 100px; /*optional*/
+   }
+   
+   header{
+       text-align: center;
+   }

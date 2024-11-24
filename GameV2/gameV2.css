@@ -1,0 +1,16 @@
+#heading{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.button{
+    padding: 15px;
+}
+
+#btns{
+    background-color: lightslategray;
+}
