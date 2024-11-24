@@ -1,0 +1,22 @@
+
+#tableheader{
+    background-color: lightgray;
+}
+
+#htmlr{
+    background-color: gray;
+}
+#cssr{
+    background-color: slategray;
+}
+#javar{
+    background-color: darkgray;
+}
+
+body{
+    background-color: antiquewhite;
+}
+h1{
+    color: slateblue;
+    font-style: italic;
+}
